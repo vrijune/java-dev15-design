@@ -32,7 +32,8 @@ bottomLevelNest.add(simpleShape);
 shapes.add(topLevelNest);
 ```
 
-![](lab15ex01img1.png)
+![](lab15ex01img1.PNG)
+
 Figure 1: Screenshot showing the output when the code is used to add shapes to AnimationViewer.
 
 ### Specification for class NestingShape
@@ -103,5 +104,5 @@ Your solution should minimize the changes made to existing code. In particular, 
 
 A slightly modified AnimationViewer, called `Ex02AnimationViewer`, which contains a JTree has been provided to you. You may use this as a starting point if you wish. If you use this as the starting point, then you should see a result similar to the screenshot below when you’ve completed this exercise.
 
-![](lab15ex01img2.png)
+![](lab15ex01img2.PNG)
 Figure 2: Screenshot showing a complete implementation of exercise two, with a shape hierarchy viewed in both an AnimationViewer and a JTree.
