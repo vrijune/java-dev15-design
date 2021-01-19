@@ -1,6 +1,7 @@
 package ictgradschool.industry.designpatterns.ex01;
 
 import java.awt.*;
+import java.util.List;
 
 /**
  * Class to represent a simple rectangle.
@@ -97,6 +98,7 @@ public class DynamicRectangleShape extends RectangleShape {
 
     /**
      * Paints this ictgradschool.industry.designpatterns.ex01.RectangleShape object using the supplied ictgradschool.industry.designpatterns.ex01.Painter object.
+     * @return
      */
     @Override
     public void paint(Painter painter) {

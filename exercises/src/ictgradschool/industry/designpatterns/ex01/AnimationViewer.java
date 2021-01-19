@@ -45,6 +45,19 @@ public class AnimationViewer extends JPanel implements ActionListener {
         shapes.add(new GemShape(200, 100, 4, 5, 40, 40));
         shapes.add(new DynamicRectangleShape(300, 200, 5, 7, 30, 50, Color.red));
 
+		NestingShape topLevelNest = new NestingShape(0, 0, 2, 2, 200, 200);
+		NestingShape midLevelNest = new NestingShape(0, 0, 2, 2, 100, 100);
+		NestingShape bottomLevelNest = new NestingShape(5, 5, 2, 2, 75, 75);
+		ImageShape tRex = new ImageShape(20, 20, 3, 4, "TRex.png", 0.2);
+		RectangleShape simpleShape = new RectangleShape(1, 1, 1, 1, 5, 5);
+
+		midLevelNest.add(bottomLevelNest);
+		midLevelNest.add(tRex);
+		topLevelNest.add(midLevelNest);
+		bottomLevelNest.add(simpleShape);
+
+		shapes.add(topLevelNest);
+
 		// Start the animation.
 		timer.start();
 	}

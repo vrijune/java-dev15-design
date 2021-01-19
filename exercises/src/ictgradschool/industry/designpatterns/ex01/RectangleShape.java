@@ -1,5 +1,7 @@
 package ictgradschool.industry.designpatterns.ex01;
 
+import java.util.List;
+
 /**
  * Class to represent a simple rectangle.
  * 
@@ -44,9 +46,10 @@ public class RectangleShape extends Shape {
 	
 	/**
 	 * Paints this ictgradschool.industry.designpatterns.ex01.RectangleShape object using the supplied ictgradschool.industry.designpatterns.ex01.Painter object.
-	 */
+     * @return
+     */
 	@Override
 	public void paint(Painter painter) {
 		painter.drawRect(fX,fY,fWidth,fHeight);
-	}
+    }
 }

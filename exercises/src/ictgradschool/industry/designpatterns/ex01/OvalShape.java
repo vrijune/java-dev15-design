@@ -1,5 +1,7 @@
 package ictgradschool.industry.designpatterns.ex01;
 
+import java.util.List;
+
 /**
  * Class to represent a simple oval.
  * 
@@ -44,9 +46,11 @@ public class OvalShape extends Shape {
 	
 	/**
 	 * Paints this OvalShape object using the supplied Painter object.
-	 */
+     * @return
+     */
 	@Override
 	public void paint(Painter painter) {
 		painter.drawOval(fX,fY,fWidth,fHeight);
-	}
+
+    }
 }

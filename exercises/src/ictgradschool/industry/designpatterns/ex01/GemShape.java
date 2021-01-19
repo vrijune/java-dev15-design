@@ -1,6 +1,7 @@
 package ictgradschool.industry.designpatterns.ex01;
 
 import java.awt.*;
+import java.util.List;
 
 /**
  * Class to represent a gem.
@@ -46,7 +47,8 @@ public class GemShape extends Shape {
 	
 	/**
 	 * Paints this GemShape object using the supplied Painter object.
-	 */
+     * @return
+     */
 	@Override
 	public void paint(Painter painter) {
 
@@ -71,5 +73,6 @@ public class GemShape extends Shape {
 
         painter.drawPolygon(polygon);
 
-	}
+
+    }
 }
